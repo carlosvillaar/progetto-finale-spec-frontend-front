@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import type { Device } from "../types/common.types";
 import "./ComponentDevice.styles.css";
 
@@ -25,13 +26,22 @@ const ComponentDevice = ({ device }: { device: Device }) => {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
-    <div className="device_row">
-      <img src={singleDevice?.photo} alt={device.title} />
+    <div
+      className="device_row"
+      onClick={() => navigate(`/device/${device.id}`)}
+    >
+      <img
+        src={singleDevice?.photo}
+        alt={device.title}
+        style={{ width: "200px" }}
+      />
       <div className="device-info">
-        <h4>Titolo: {device.title}</h4>
-        <p>Category: {device.category}</p>
+        <h4>{device.title}</h4>
       </div>
+      <p>{device.category}</p>
     </div>
   );
 };

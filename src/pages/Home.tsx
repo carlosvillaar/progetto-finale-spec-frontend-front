@@ -13,6 +13,7 @@ const Home = () => {
   //States
   const [devices, setDevices] = useState<Device[]>([]);
   const [filters, setFilters] = useState<Filters>(defaultFilters);
+  const [growing, setGrowing] = useState<boolean>(false);
 
   //Effects
   useEffect(() => {
@@ -38,6 +39,30 @@ const Home = () => {
     }
   };
 
+  const handleSorting = (key: "category" | "title", orderType: boolean) => {
+    const nextDevices: Device[] = devices.sort((a: any, b: any) => {
+      switch (orderType) {
+        case true: {
+          const order = a[key].localeCompare(b[key]);
+          setGrowing(!growing);
+          return order;
+        }
+        case false: {
+          const order = b[key].localeCompare(a[key]);
+          setGrowing(!growing);
+          return order;
+        }
+        default: {
+          const order = a[key].localeCompare(b[key]);
+          setGrowing(!growing);
+          return order;
+        }
+      }
+    });
+
+    setDevices([...nextDevices]);
+  };
+
   return (
     <>
       <div className="filter_container">
@@ -47,6 +72,32 @@ const Home = () => {
             setFilters({ title, category })
           }
         />
+      </div>
+      <div className="devices_container">
+        <div className="table-header">
+          <div style={{ width: "200px" }}>
+            <p>Foto</p>
+          </div>
+          <div style={{ width: "400px" }}>
+            <p
+              onClick={() => handleSorting("title", growing)}
+              style={{
+                cursor: "pointer",
+                width: "fit-content",
+              }}
+            >
+              Nome
+            </p>
+          </div>
+          <div>
+            <p
+              onClick={() => handleSorting("category", growing)}
+              style={{ cursor: "pointer" }}
+            >
+              Categoria
+            </p>
+          </div>
+        </div>
       </div>
       {devices.length > 0 ? (
         <div className="devices_container">
