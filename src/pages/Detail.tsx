@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const basePath = import.meta.env.VITE_API_ENDPOINT!;
 
 const Detail = () => {
   //Hooks
-  const navigate = useNavigate();
   const { id } = useParams();
 
   //Fetches

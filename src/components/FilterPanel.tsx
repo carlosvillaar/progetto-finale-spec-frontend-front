@@ -1,4 +1,6 @@
-import { useRef, type FormEvent } from "react";
+import { useContext, useRef, type FormEvent } from "react";
+import { GlobalContext } from "../context/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 const FilterPanel = ({
   onReset,
@@ -7,9 +9,14 @@ const FilterPanel = ({
   onReset: VoidFunction;
   onSubmit: (name: string, category: string) => void;
 }) => {
+  //Hooks
+  const navigate = useNavigate();
   //Refs
   const titleRef = useRef<HTMLInputElement | null>(null);
   const categoryRef = useRef<HTMLSelectElement | null>(null);
+
+  //Context
+  const { deviceToCompare } = useContext(GlobalContext);
 
   //Handlers
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -32,6 +39,14 @@ const FilterPanel = ({
     }
   };
 
+  const handleComparate = () => {
+    if (deviceToCompare.length >= 2) {
+      navigate("device/compare");
+    } else {
+      alert("selezina almeno due device da comparare");
+    }
+  };
+
   return (
     <div>
       <h4>Filtra</h4>
@@ -42,6 +57,9 @@ const FilterPanel = ({
         </select>
         <button type="submit">Applica</button>
         <button onClick={handleReset}>Resetta</button>
+        <button disabled={deviceToCompare.length < 2} onClick={handleComparate}>
+          Compara
+        </button>
       </form>
     </div>
   );
