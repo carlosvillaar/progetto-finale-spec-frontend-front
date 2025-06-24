@@ -45,16 +45,12 @@ const ComponentDevice = ({ device }: { device: Device }) => {
     }
   };
 
-  console.log(deviceToCompare);
+  const basePath = import.meta.env.VITE_API_ENDPOINT;
 
   return (
     <div className="device_row">
       <input type="checkbox" onChange={addDeviceToCompare} />
-      <img
-        src={singleDevice?.photo}
-        alt={device.title}
-        style={{ width: "200px" }}
-      />
+      <img src={`${basePath}${singleDevice?.photo}`} alt={device.title} />
       <div className="device-info">
         <h4>{device.title}</h4>
       </div>

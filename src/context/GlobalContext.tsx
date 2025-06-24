@@ -1,4 +1,4 @@
-import { createContext, useState, type ReactNode } from "react";
+import { createContext, useEffect, useState, type ReactNode } from "react";
 
 type GlobalContextType = {
   deviceToCompare: number[];
@@ -24,17 +24,30 @@ type GlobalProviderType = {
 
 const GlobalProvider = ({ children }: GlobalProviderType) => {
   const [deviceToCompare, setDeviceToCompare] = useState<number[]>([]);
-  const [favourites, setFaourites] = useState<number[]>([]);
+  const [favourites, setFavourites] = useState<number[]>([]);
   const setDevice = (id: number[]) => setDeviceToCompare([...id]);
 
   const handleFavourites = (id: number) => {
     if (favourites.includes(id)) {
       const nextFavourites = favourites.filter((el: number) => el !== id);
-      setFaourites(nextFavourites);
+      setFavourites(nextFavourites);
+      localStorage.setItem("favourites", JSON.stringify(nextFavourites));
     } else {
-      setFaourites([...favourites, id]);
+      setFavourites([...favourites, id]);
+      localStorage.setItem("favourites", JSON.stringify([...favourites, id]));
     }
   };
+
+  useEffect(() => {
+    const storageFavourites = localStorage.getItem("favourites");
+    if (storageFavourites) {
+      const parsedFavourites = JSON.parse(storageFavourites);
+
+      if (parsedFavourites) {
+        setFavourites(parsedFavourites);
+      }
+    }
+  }, []);
 
   return (
     <GlobalContext.Provider

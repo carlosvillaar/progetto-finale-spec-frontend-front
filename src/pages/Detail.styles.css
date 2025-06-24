@@ -1,0 +1,36 @@
+.device-card {
+  margin: 100px auto;
+  max-width: 1000px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.651);
+  border-radius: 30px;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+
+  & > img {
+    margin-left: 10px;
+    width: 270px;
+    height: 80%;
+  }
+}
+
+.card-text {
+  font-size: 24px;
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 9px;
+  border: 1px solid rgba(128, 128, 128, 0.442);
+}

@@ -1,0 +1,32 @@
+.favourites-container {
+  width: 70%;
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.favourites-card {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.card-img {
+  & > img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

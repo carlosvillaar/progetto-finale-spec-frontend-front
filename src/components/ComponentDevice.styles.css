@@ -12,16 +12,12 @@
   border: 1px solid #e1e1e1;
   transition: all 0.5s ease;
   & > img {
-    height: 100%;
+    height: 80px;
+    object-fit: contain;
     border-radius: 10px;
   }
   &:hover {
     transform: scale(1.02);
-  }
-  &:active {
-    transform: scale(0.95);
-    background-color: #e1e1e1;
-    box-shadow: 0px 2px 5px #00000030;
   }
 }
 

@@ -3,6 +3,7 @@ import type { Device, Filters } from "../types/common.types";
 import ComponentDevice from "../components/ComponentDevice";
 import FilterPanel from "../components/FilterPanel";
 import "./Home.styles.css";
+import { useNavigate } from "react-router-dom";
 
 const defaultFilters: Filters = {
   title: "",
@@ -14,6 +15,10 @@ const Home = () => {
   const [devices, setDevices] = useState<Device[]>([]);
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [growing, setGrowing] = useState<boolean>(false);
+
+  //Hooks
+
+  const navigate = useNavigate();
 
   //Effects
   useEffect(() => {
@@ -75,10 +80,10 @@ const Home = () => {
       </div>
       <div className="devices_container">
         <div className="table-header">
-          <div style={{ width: "200px" }}>
+          <div style={{ width: "100px" }}>
             <p>Foto</p>
           </div>
-          <div style={{ width: "400px" }}>
+          <div style={{ width: "390px" }}>
             <p
               onClick={() => handleSorting("title", growing)}
               style={{

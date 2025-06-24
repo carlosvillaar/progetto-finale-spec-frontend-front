@@ -1,6 +1,7 @@
 import { useContext, useRef, type FormEvent } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import { useNavigate } from "react-router-dom";
+import "./FilterPanel.styles.css";
 
 const FilterPanel = ({
   onReset,
@@ -32,10 +33,10 @@ const FilterPanel = ({
   const handleReset = () => {
     onReset();
     if (titleRef.current) {
-      titleRef.current.value = ""; // Resetta il campo input
+      titleRef.current.value = ""; // Resetta la ricerca
     }
     if (categoryRef.current) {
-      categoryRef.current.value = "smartphone"; // Resetta il campo input
+      categoryRef.current.value = "smartphone"; // Resetta la tipologia
     }
   };
 
@@ -48,10 +49,16 @@ const FilterPanel = ({
   };
 
   return (
-    <div>
+    <div className="filter-container">
       <h4>Filtra</h4>
-      <form onSubmit={handleSubmit}>
-        <input ref={titleRef} name="title" type="text" />
+      <form className="filter-form" onSubmit={handleSubmit}>
+        <button onClick={() => navigate("/favourites")}>Preferiti</button>
+        <input
+          placeholder="Cerca per titolo"
+          ref={titleRef}
+          name="title"
+          type="text"
+        />
         <select ref={categoryRef} name="category">
           <option value="smartphone">Smartphone</option>
         </select>
