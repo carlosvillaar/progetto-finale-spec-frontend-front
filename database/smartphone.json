@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2025-06-11T21:55:07.708Z",
+    "updatedAt": "2025-06-11T21:55:07.708Z",
+    "title": "Apple iPhone 16 Pro Max",
+    "brand": {
+      "name": "Apple",
+      "logo": "/img/Apple_logo_black.svg"
+    },
+    "category": "smartphone",
+    "price": 1399,
+    "availableColors": [
+      "Graphite",
+      "Silver",
+      "Gold",
+      "Blue"
+    ],
+    "releaseDate": "2025-09-01",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "battery_mAh": 4500,
+    "display_inches": 6.7,
+    "cpu": "A19 Pro",
+    "features": [
+      "5G",
+      "Dynamic Island",
+      "120Hz ProMotion"
+    ],
+    "photo": "/img/apple-iphone16-pro-max-smartphone-256gb-black-titanium.jpeg"
+  },
+  {
+    "id": 2,
+    "createdAt": "2025-06-11T21:55:07.708Z",
+    "updatedAt": "2025-06-11T21:55:07.708Z",
+    "title": "Samsung Galaxy S25 Ultra",
+    "brand": {
+      "name": "Samsung",
+      "logo": "/img/Samsung_Logo.svg.png"
+    },
+    "category": "smartphone",
+    "price": 1299,
+    "availableColors": [
+      "Phantom Black",
+      "Silver",
+      "Lime",
+      "Sky Blue"
+    ],
+    "releaseDate": "2025-02-25",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "battery_mAh": 5000,
+    "display_inches": 6.8,
+    "cpu": "Exynos 2500",
+    "features": [
+      "S Pen",
+      "200MP camera",
+      "120Hz AMOLED"
+    ],
+    "photo": "/img/s25-ultra.jpg"
+  },
+  {
+    "id": 3,
+    "createdAt": "2025-06-11T21:55:07.708Z",
+    "updatedAt": "2025-06-11T21:55:07.708Z",
+    "title": "Google Pixel 10",
+    "brand": {
+      "name": "Google",
+      "logo": "/img/Google__G__logo.svg.webp"
+    },
+    "category": "smartphone",
+    "price": 899,
+    "availableColors": [
+      "Snow",
+      "Obsidian",
+      "Sky",
+      "Coral"
+    ],
+    "releaseDate": "2025-10-15",
+    "storageOptions": [
+      "128GB",
+      "256GB"
+    ],
+    "battery_mAh": 4200,
+    "display_inches": 6.3,
+    "cpu": "Tensor G5",
+    "features": [
+      "Magic Eraser",
+      "AI Call Screening"
+    ],
+    "photo": "/img/Google-Pixel-10-Pro-render-CAD-OnLeaks-03.webp"
+  },
+  {
+    "id": 4,
+    "createdAt": "2025-06-11T21:55:07.708Z",
+    "updatedAt": "2025-06-11T21:55:07.708Z",
+    "title": "OnePlus 14",
+    "brand": {
+      "name": "OnePlus",
+      "logo": "/img/oneplus-2.svg"
+    },
+    "category": "smartphone",
+    "price": 799,
+    "availableColors": [
+      "Black",
+      "Silver",
+      "Forest"
+    ],
+    "releaseDate": "2025-07-20",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "battery_mAh": 4800,
+    "display_inches": 6.7,
+    "cpu": "Snapdragon 8 Gen 4",
+    "features": [
+      "120W fast charge",
+      "120Hz Fluid AMOLED"
+    ],
+    "photo": "/img/One-plus-14.webp"
+  },
+  {
+    "id": 5,
+    "title": "Xiaomi 15 Pro",
+    "brand": {
+      "name": "Xiaomi",
+      "logo": "/img/Xiaomi_logo.svg.png"
+    },
+    "category": "smartphone",
+    "price": 749,
+    "availableColors": [
+      "Black",
+      "White",
+      "Blue"
+    ],
+    "releaseDate": "2025-08-10",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "battery_mAh": 4700,
+    "display_inches": 6.73,
+    "cpu": "Snapdragon 8 Gen 3",
+    "features": [
+      "90W fast charge",
+      "120Hz AMOLED",
+      "Leica Camera"
+    ],
+    "photo": "/img/66559-xiaomi-15-pro-3.jpg",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  },
+  {
+    "id": 6,
+    "title": "Sony Xperia 1 VII",
+    "brand": {
+      "name": "Sony",
+      "logo": "/img/sony_logo.jpg"
+    },
+    "category": "smartphone",
+    "price": 1199,
+    "availableColors": [
+      "Black",
+      "Purple",
+      "White"
+    ],
+    "releaseDate": "2025-05-30",
+    "storageOptions": [
+      "256GB",
+      "512GB"
+    ],
+    "battery_mAh": 5000,
+    "display_inches": 6.5,
+    "cpu": "Snapdragon 8 Gen 3",
+    "features": [
+      "4K HDR OLED",
+      "CineAlta video",
+      "120Hz refresh rate"
+    ],
+    "photo": "/img/sony_xperia.webp",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  },
+  {
+    "id": 7,
+    "title": "Motorola Edge 50 Ultra",
+    "brand": {
+      "name": "Motorola",
+      "logo": "/img/Motorola_logo.png"
+    },
+    "category": "smartphone",
+    "price": 999,
+    "availableColors": [
+      "Black",
+      "Peach Fuzz",
+      "Forest Green"
+    ],
+    "releaseDate": "2025-04-15",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "battery_mAh": 5100,
+    "display_inches": 6.7,
+    "cpu": "Snapdragon 8 Gen 3",
+    "features": [
+      "125W TurboPower",
+      "200MP camera",
+      "Edge Display"
+    ],
+    "photo": "/img/motorola-edge.jpg",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  },
+  {
+    "id": 8,
+    "title": "Asus ROG Phone 9",
+    "brand": {
+      "name": "Asus",
+      "logo": "/img/asus_logo.jpg"
+    },
+    "category": "smartphone",
+    "price": 1399,
+    "availableColors": [
+      "Phantom Black",
+      "Storm White"
+    ],
+    "releaseDate": "2025-07-01",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "battery_mAh": 6000,
+    "display_inches": 6.78,
+    "cpu": "Snapdragon 8 Gen 4",
+    "features": [
+      "165Hz AMOLED",
+      "AirTrigger",
+      "RGB Lighting"
+    ],
+    "photo": "/img/rog_phone.jpg",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  },
+  {
+    "id": 9,
+    "title": "Realme GT Neo 6",
+    "brand": {
+      "name": "Realme",
+      "logo": "/img/realme-logo.png"
+    },
+    "category": "smartphone",
+    "price": 599,
+    "availableColors": [
+      "Green",
+      "Silver",
+      "Black"
+    ],
+    "releaseDate": "2025-06-18",
+    "storageOptions": [
+      "128GB",
+      "256GB"
+    ],
+    "battery_mAh": 5000,
+    "display_inches": 6.74,
+    "cpu": "Dimensity 9200+",
+    "features": [
+      "150W fast charge",
+      "144Hz AMOLED",
+      "VC cooling"
+    ],
+    "photo": "/img/gt_neo.webp",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  },
+  {
+    "id": 10,
+    "title": "Honor Magic6 Pro",
+    "brand": {
+      "name": "Honor",
+      "logo": "/img/honor-logo.webp"
+    },
+    "category": "smartphone",
+    "price": 1099,
+    "availableColors": [
+      "Black",
+      "Green",
+      "White"
+    ],
+    "releaseDate": "2025-03-22",
+    "storageOptions": [
+      "256GB",
+      "512GB"
+    ],
+    "battery_mAh": 5450,
+    "display_inches": 6.8,
+    "cpu": "Snapdragon 8 Gen 3",
+    "features": [
+      "Quad-Curve OLED",
+      "100W SuperCharge",
+      "AI Motion Capture"
+    ],
+    "photo": "/img/magic6.jpg",
+    "createdAt": "2025-06-24T13:29:16Z",
+    "updatedAt": "2025-06-24T13:29:16Z"
+  }
+]
